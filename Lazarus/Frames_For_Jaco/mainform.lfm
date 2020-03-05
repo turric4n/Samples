@@ -1,0 +1,60 @@
+object FrmMain: TFrmMain
+  Left = 342
+  Height = 476
+  Top = 250
+  Width = 600
+  Caption = 'FrmMain'
+  ClientHeight = 476
+  ClientWidth = 600
+  object TabControl1: TTabControl
+    Left = 0
+    Height = 476
+    Top = 0
+    Width = 600
+    OnChange = TabControl1Change
+    TabIndex = 0
+    Tabs.Strings = (
+      'New Tab'
+      'New Tab1'
+    )
+    Align = alClient
+    TabOrder = 0
+    inline ListBoxFrame1: TListBoxFrame
+      Left = 2
+      Height = 446
+      Top = 28
+      Width = 596
+      ClientHeight = 446
+      ClientWidth = 596
+      TabOrder = 2
+      Visible = False
+      inherited ListBox1: TListBox
+        Height = 446
+        Width = 596
+        ScrollWidth = 594
+      end
+    end
+    inline FrameButton1: TFrameButton
+      Left = 2
+      Height = 446
+      Top = 28
+      Width = 596
+      ClientHeight = 446
+      ClientWidth = 596
+      TabOrder = 1
+      DesignLeft = 333
+      DesignTop = 28
+      inherited Panel1: TPanel
+        Height = 446
+        Width = 596
+        ClientHeight = 446
+        ClientWidth = 596
+        inherited Button1: TButton
+          Left = 249
+          Top = 202
+          OnClick = Button1Click
+        end
+      end
+    end
+  end
+end
