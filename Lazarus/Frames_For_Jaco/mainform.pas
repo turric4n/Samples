@@ -16,6 +16,7 @@ type
     ListBoxFrame1: TListBoxFrame;
     TabControl1: TTabControl;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
     procedure TabControl1Change(Sender: TObject);
   private
 
@@ -53,10 +54,19 @@ end;
 
 procedure TFrmMain.Button1Click(Sender: TObject);
 begin
-  ListBoxFrame1.PutIntoListbox('Hello from MainForm');
+  ListBoxFrame1.PutIntoListbox('Hello from MainForm button1');
   TabControl1.TabIndex := 1;
   TabControl1.OnChange(TabControl1);
 end;
+
+procedure TFrmMain.Button2Click(Sender: TObject);
+begin
+  ListBoxFrame1.PutIntoListbox('Hello from MainForm button2');
+  TabControl1.TabIndex := 1;
+  TabControl1.OnChange(TabControl1);
+end;
+
+
 
 end.
 

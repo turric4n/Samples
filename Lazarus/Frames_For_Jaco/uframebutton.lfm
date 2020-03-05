@@ -1,31 +1,54 @@
 object FrameButton: TFrameButton
   Left = 0
-  Height = 249
+  Height = 188
   Top = 0
-  Width = 322
+  Width = 375
   Align = alClient
-  ClientHeight = 249
-  ClientWidth = 322
+  ClientHeight = 188
+  ClientWidth = 375
   TabOrder = 0
-  DesignLeft = 332
-  DesignTop = 27
-  object Panel1: TPanel
+  DesignLeft = 330
+  DesignTop = 25
+  object FlowPanel1: TFlowPanel
     Left = 0
-    Height = 249
+    Height = 188
     Top = 0
-    Width = 322
+    Width = 375
     Align = alClient
-    ClientHeight = 249
-    ClientWidth = 322
+    ControlList = <    
+      item
+        Control = Button1
+        WrapAfter = waAuto
+        Index = 0
+      end    
+      item
+        Control = Button2
+        WrapAfter = waAuto
+        Index = 1
+      end>
+    FlowLayout = tlCenter
+    FlowStyle = fsLeftRightTopBottom
     TabOrder = 0
     object Button1: TButton
-      Left = 112
+      Left = 1
       Height = 40
-      Top = 104
+      Top = 1
       Width = 99
+      Align = alCustom
       Anchors = []
       Caption = 'Button1'
+      OnClick = Button1Click
       TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 100
+      Height = 40
+      Top = 1
+      Width = 99
+      Anchors = []
+      Caption = 'Button2'
+      OnClick = Button2Click
+      TabOrder = 1
     end
   end
 end

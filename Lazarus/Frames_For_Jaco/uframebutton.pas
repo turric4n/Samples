@@ -13,7 +13,10 @@ type
 
   TFrameButton = class(TFrame)
     Button1: TButton;
-    Panel1: TPanel;
+    Button2: TButton;
+    FlowPanel1: TFlowPanel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
 
   public
@@ -23,6 +26,18 @@ type
 implementation
 
 {$R *.lfm}
+
+{ TFrameButton }
+
+procedure TFrameButton.Button1Click(Sender: TObject);
+begin
+
+end;
+
+procedure TFrameButton.Button2Click(Sender: TObject);
+begin
+
+end;
 
 end.
 

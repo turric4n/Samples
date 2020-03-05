@@ -1,16 +1,17 @@
 object FrmMain: TFrmMain
   Left = 342
-  Height = 476
+  Height = 432
   Top = 250
-  Width = 600
+  Width = 525
   Caption = 'FrmMain'
-  ClientHeight = 476
-  ClientWidth = 600
+  ClientHeight = 432
+  ClientWidth = 525
+  LCLVersion = '2.1.0.0'
   object TabControl1: TTabControl
     Left = 0
-    Height = 476
+    Height = 432
     Top = 0
-    Width = 600
+    Width = 525
     OnChange = TabControl1Change
     TabIndex = 0
     Tabs.Strings = (
@@ -21,38 +22,37 @@ object FrmMain: TFrmMain
     TabOrder = 0
     inline ListBoxFrame1: TListBoxFrame
       Left = 2
-      Height = 446
+      Height = 402
       Top = 28
-      Width = 596
-      ClientHeight = 446
-      ClientWidth = 596
+      Width = 521
+      ClientHeight = 402
+      ClientWidth = 521
       TabOrder = 2
       Visible = False
       inherited ListBox1: TListBox
-        Height = 446
-        Width = 596
-        ScrollWidth = 594
+        Height = 402
+        Width = 521
+        ScrollWidth = 519
       end
     end
     inline FrameButton1: TFrameButton
       Left = 2
-      Height = 446
+      Height = 402
       Top = 28
-      Width = 596
-      ClientHeight = 446
-      ClientWidth = 596
+      Width = 521
+      ClientHeight = 402
+      ClientWidth = 521
       TabOrder = 1
       DesignLeft = 333
       DesignTop = 28
-      inherited Panel1: TPanel
-        Height = 446
-        Width = 596
-        ClientHeight = 446
-        ClientWidth = 596
+      inherited FlowPanel1: TFlowPanel
+        Height = 402
+        Width = 521
         inherited Button1: TButton
-          Left = 249
-          Top = 202
           OnClick = Button1Click
+        end
+        inherited Button2: TButton
+          OnClick = Button2Click
         end
       end
     end
